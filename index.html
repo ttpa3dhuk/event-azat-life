@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <base href="/viewer-20261025-upper-floors/">
+  <base href="/viewer-20261029-combined/">
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#f5f5f0">
   <title>Все инструменты · 3D-план</title>
@@ -13,23 +13,22 @@
   <header class="header"><a class="brand" href="./" aria-label="EventLab, начало"><span class="brand-mark">E<span>↗</span></span>EventLab<span class="brand-sub">/ просмотр проекта</span></a><span class="preview-badge"><i></i>Тестовая версия</span></header>
   <main class="layout">
     <aside class="sidebar" aria-label="Настройки просмотра">
-      <div class="project"><p class="eyebrow">02 декабря 2026</p><h1>Все<br class="desktop-break"> инструменты</h1><p class="subtitle" id="project-subtitle">Расстановка · первый этаж</p><span class="draft">Рабочий вариант</span></div>
+      <div class="project"><p class="eyebrow">02 декабря 2026</p><h1>Все<br class="desktop-break"> инструменты</h1><p class="subtitle" id="project-subtitle">Общая расстановка · 1 + 2 этажи</p><span class="draft">Рабочий вариант</span></div>
       <nav class="floor-switch" aria-label="Выбор этажа">
-        <button type="button" data-floor="1" aria-pressed="true"><span>1</span><small>этаж</small></button>
-        <button type="button" data-floor="2" aria-pressed="false"><span>2</span><small>этаж</small></button>
+        <button type="button" data-floor="1" aria-pressed="true"><span>1+2</span><small>этажи</small></button>
         <button type="button" data-floor="3" aria-pressed="false"><span>3</span><small>этаж</small></button>
       </nav>
-      <p class="assumption" id="assumption">Высоты 2 и 3 этажей — условно 3 м, не обмер.</p>
+      <p class="assumption" id="assumption">Черновая расстановка по планам площадки.</p>
       <button id="details-toggle" class="mobile-toggle" aria-expanded="false" aria-controls="view-settings">Настройки вида <span>⌄</span></button>
       <div id="view-settings" class="settings">
         <section><h2>Ракурс</h2><div class="view-buttons" role="group" aria-label="Ракурс камеры"><button data-view="overview" aria-pressed="true"><span>◇</span>Общий вид</button><button data-view="top" aria-pressed="false"><span>▦</span>Сверху</button><button data-view="entrance" aria-pressed="false"><span>↗</span>Со стороны входа</button></div></section>
         <section><h2>Показать на плане</h2><div id="layers" class="layers"></div></section>
         <p class="note" id="floor-note">Черновая геометрия площадки. Размеры и высоты ещё уточняются.</p>
       </div>
-      <div class="sidebar-bottom"><span class="floor-tag" id="floor-tag">01</span><div><span id="floor-name">Первый этаж</span><small id="floor-desc">План расстановки</small></div></div>
+      <div class="sidebar-bottom"><span class="floor-tag" id="floor-tag">01+02</span><div><span id="floor-name">1 + 2 этажи</span><small id="floor-desc">Общая сцена с оборудованием</small></div></div>
     </aside>
     <div id="viewer" class="viewport" role="region" aria-label="Интерактивная 3D-схема площадки">
-      <div class="scene-heading"><span class="scene-dot"></span><span id="view-label">Общий вид</span><span class="scene-separator">/</span><span id="scene-floor">Этаж 1</span></div>
+      <div class="scene-heading"><span class="scene-dot"></span><span id="view-label">Общий вид</span><span class="scene-separator">/</span><span id="scene-floor">Этажи 1 + 2</span></div>
       <div id="loading" class="loading" role="status"><span class="spinner"></span><strong id="loading-title">Открываем площадку</strong><span id="load-progress">Загружаем 3D-план…</span></div>
       <div id="error" class="error" role="alert" hidden><strong>Не удалось открыть 3D-план</strong><p id="error-text">Проверьте соединение и обновите страницу.</p><button id="retry">Повторить</button></div>
       <div class="canvas-tools" role="group" aria-label="Управление камерой"><button id="zoom-in" title="Приблизить" aria-label="Приблизить">+</button><button id="zoom-out" title="Отдалить" aria-label="Отдалить">−</button><span></span><button id="reset" title="Вернуть общий вид" aria-label="Вернуть общий вид">⌂</button><button id="fullscreen" title="На весь экран" aria-label="На весь экран">⛶</button></div>
