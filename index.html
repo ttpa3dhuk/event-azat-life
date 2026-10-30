@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <base href="/viewer-20261030-all-floors/">
+  <base href="/viewer-20261030-navigation/">
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#f5f5f0">
   <title>Все инструменты · 3D-план</title>
@@ -32,7 +32,7 @@
       <div id="loading" class="loading" role="status"><span class="spinner"></span><strong id="loading-title">Открываем площадку</strong><span id="load-progress">Загружаем 3D-план…</span></div>
       <div id="error" class="error" role="alert" hidden><strong>Не удалось открыть 3D-план</strong><p id="error-text">Проверьте соединение и обновите страницу.</p><button id="retry">Повторить</button></div>
       <div class="canvas-tools" role="group" aria-label="Управление камерой"><button id="zoom-in" title="Приблизить" aria-label="Приблизить">+</button><button id="zoom-out" title="Отдалить" aria-label="Отдалить">−</button><span></span><button id="reset" title="Вернуть общий вид" aria-label="Вернуть общий вид">⌂</button><button id="fullscreen" title="На весь экран" aria-label="На весь экран">⛶</button></div>
-      <div class="viewport-footer"><p class="help-desktop">Тяните, чтобы вращать <span>·</span> Колесо для приближения <span>·</span> Правая кнопка для сдвига</p><p class="help-touch">Один палец: вращение · Два: масштаб и сдвиг</p><span class="model-status" id="model-status" role="status">3D-план</span></div>
+      <div class="viewport-footer"><p class="help-desktop">Тяните, чтобы вращать <span>·</span> Колесо для приближения <span>·</span> Правая кнопка для сдвига · Двойной клик: центр вращения</p><p class="help-touch">Один палец: вращение · Два: масштаб и сдвиг · Двойной тап: центр вращения</p><span class="model-status" id="model-status" role="status">3D-план</span></div>
     </div>
   </main>
   <script type="module" src="app.js"></script>
